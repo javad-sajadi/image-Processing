@@ -5,7 +5,17 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Array%20Computing-blue.svg)](https://numpy.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A comprehensive computational laboratory implementing fundamental and advanced **Digital Image Processing (DIP)** algorithms in Python, OpenCV, and NumPy across 110+ practical experiments.
+A comprehensive computational laboratory implementing fundamental and advanced **Digital Image Processing (DIP)** algorithms in Python, OpenCV, Pillow, and NumPy across 110+ practical experiments.
+
+---
+
+## 🖼️ Visual Comparison & Spatial Filtering Demo
+
+Below is the multi-stage filter transformation generated on benchmark photograph `image1.jpg`:
+
+![Digital Image Processing Comparison](enhanced_comparison.png)
+
+*Comparison panels demonstrating the original RGB frame, adaptive histogram contrast optimization, first-order Sobel directional gradient magnitudes, and isotropic Laplacian edge response.*
 
 ---
 
@@ -16,7 +26,7 @@ This repository provides hands-on implementations of essential spatial-domain an
 ### Covered Algorithmic Domains
 1. **Contrast & Luminance Enhancement:**
    - Multi-channel intensity masking and thresholding.
-   - Contrast Limited Adaptive Histogram Equalization (CLAHE) in perceptual LAB color space.
+   - Contrast Limited Adaptive Histogram Equalization (CLAHE) and auto-contrast stretching.
    - Gamma correction and non-linear dynamic range compression.
 2. **Spatial Filtering & Edge Detection:**
    - First-order directional gradient estimation (Sobel $G_x, G_y$).
@@ -59,6 +69,7 @@ jupyter notebook image_processing_lab.ipynb
 .
 ├── image_processing_lab.ipynb  # Comprehensive 110+ cell digital image processing laboratory
 ├── image_enhancer.py           # Production CLI tool for contrast enhancement and edge detection
+├── enhanced_comparison.png     # Visual multi-filter comparison demonstration preview
 ├── image*.jpg / .jpeg          # Benchmark sample images for spatial filtering and testing
 ├── movie02.mp4                 # Video sequence benchmark for temporal frame processing
 ├── requirements.txt            # Python environment specifications
